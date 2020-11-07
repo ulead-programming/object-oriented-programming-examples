@@ -5,8 +5,22 @@ public class Door {
     private boolean isLocked;
     private String key;
 
+    /**
+     * Constructor method. This is used to create instances of this class Door.
+     * @param key
+     */
+    public Door(String key){
+        this.isClosed = true;
+        this.isLocked = true;
+        this.key = key;
+    }
+
     public boolean getIsLocked(){
         return this.isLocked;
+    }
+
+    public boolean getIsClosed(){
+        return this.isClosed;
     }
 
     /**
